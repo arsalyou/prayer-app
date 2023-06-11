@@ -21,6 +21,7 @@ import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
 import io.expo.client.BuildConfig;
+import io.expo.client.MyAppPackage;
 import io.expo.client.newarchitecture.components.MainComponentsRegistry;
 import io.expo.client.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
@@ -47,9 +48,9 @@ public class MainApplicationReactNativeHost extends ReactNativeHost {
   protected List<ReactPackage> getPackages() {
     List<ReactPackage> packages = new PackageList(this).getPackages();
     // Packages that cannot be autolinked yet can be added manually here, for example:
-    //     packages.add(new MyReactNativePackage());
+        packages.add(new MyAppPackage());
     // TurboModules must also be loaded here providing a valid TurboReactPackage implementation:
-    //     packages.add(new TurboReactPackage() { ... });
+    //    packages.add(new TurboReactPackage() { ... });
     // If you have custom Fabric Components, their ViewManagers should also be loaded here
     // inside a ReactPackage.
     return packages;

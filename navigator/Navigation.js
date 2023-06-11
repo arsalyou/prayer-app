@@ -25,7 +25,7 @@ const Navigation = () => {
   };
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator initialRouteName="Splash1" screenOptions={screenOptions}>
+      <Stack.Navigator initialRouteName="Splash" screenOptions={screenOptions}>
         <Stack.Screen name="Splash1" component={Splash1} />
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Home" component={Home} />

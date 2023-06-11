@@ -2,7 +2,6 @@ import { View, Text } from "react-native";
 import React from "react";
 import { NavigationContainer, DefaultTheme,  } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Splash from "../screens/Splash";
 import Splash1 from "../screens/Splash1";
 import Home from "../screens/Home";
 import Details from "../screens/Details";
@@ -25,9 +24,8 @@ const Navigation = () => {
   };
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator initialRouteName="PrayerHome" screenOptions={screenOptions}>
+      <Stack.Navigator initialRouteName="Splash1" screenOptions={screenOptions}>
         <Stack.Screen name="Splash1" component={Splash1} />
-        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
         <Stack.Screen name="PrayerHome" component={PrayerHome} />

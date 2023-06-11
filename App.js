@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Navigation from './navigator/Navigation';
 import Home from './screens/Home';
-import Splash from './screens/Splash';
 import { useFonts } from "expo-font";
 
 
